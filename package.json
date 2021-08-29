@@ -1,0 +1,26 @@
+{
+  "name": "plaintext-signatures",
+  "main": "./lib/main",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "engines": {
+    "mailspring": "*"
+  },
+  "windowTypes": {
+    "default": true,
+    "composer": true,
+    "thread-popout": true
+  },
+  "description": "A small extension to Mailspring's built-in signatures plugin to implement plaintext signatures",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "react": "^17.0.2",
+    "slate": "^0.65.3"
+  }
+}
