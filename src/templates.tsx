@@ -1,3 +1,5 @@
+import React from 'react';
+
 /* Important! We use function.name to store the selected template index!
 Do not rename these methods after shipping a release with them */
 

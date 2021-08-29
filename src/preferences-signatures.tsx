@@ -15,7 +15,6 @@ import {
 } from 'mailspring-exports';
 import { Flexbox, EditableList } from 'mailspring-component-kit';
 
-import { ResolveSignatureData, RenderSignatureData, DataShape } from './constants';
 import SignatureAccountDefaultPicker from './signature-account-default-picker';
 import SignatureTemplatePicker from './signature-template-picker';
 import Templates from './templates';
@@ -77,7 +76,7 @@ class SignatureEditor extends React.Component<SignatureEditorProps, SignatureEdi
     if (sig.data.templateName) {
       const template = Templates.find(t => t.name === sig.data.templateName);
       if (template) {
-        sig.body = RenderSignatureData(sig.data);
+        sig.body = sig.data;
       }
     }
 
